@@ -47,7 +47,7 @@
 <script>
 
 import productList from "./components/ProductList.vue";
-import checkout from "./components/Form.vue";
+import checkout from "./components/Cart.vue";
 
 
 // starting the vue app
