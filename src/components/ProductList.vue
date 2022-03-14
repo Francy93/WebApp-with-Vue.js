@@ -129,8 +129,9 @@
         data() { return {}; },
         created(){
             console.log("Loading carousel...")
-
-
+        },
+        mounted(){
+            console.log("Loading Loaded!")
         },
         methods: {
             addToCart(product) {
