@@ -35,7 +35,7 @@
             <!--END empty cart -->
             
             <!--START cart cards -->
-                <li v-else v-for="product in cart" :key="product" class="clearfix">
+                <li v-else v-for="product in cart"  class="clearfix">
                     <img v-bind:src="getProductById(product.id).logo" />
                     <div class="cart-data">
                         <span class="item-name">{{getProductById(product.id).title}}</span>
@@ -144,7 +144,7 @@
             */
             validateForm(){
                 const element = document.getElementById("checkoutButton");
-
+                
                 if(element.tagName != "BUTTON"){ //if just a focus-out of the inputBox
                         const validate = new Validation(element);
                         const result = validate.inputs();
