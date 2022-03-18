@@ -35,7 +35,7 @@
             <!--END empty cart -->
             
             <!--START cart cards -->
-                <li v-else v-for="product in cart"  class="clearfix">
+                <li v-else v-for="(product, index) in cart" :key="index" class="clearfix">
                     <img v-bind:src="getProductById(product.id).logo" />
                     <div class="cart-data">
                         <span class="item-name">{{getProductById(product.id).title}}</span>

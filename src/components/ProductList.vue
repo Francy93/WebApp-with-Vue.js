@@ -6,7 +6,7 @@
 
 			<!-- START search results -->
 				<div class="found-cards" v-if="searchOn">
-					<div v-for="card in showcase" class="col-xs-12 col-sm-4 col-md-4">
+					<div v-for="(card, index) in showcase" :key="index" class="col-xs-12 col-sm-4 col-md-4">
 						<div class="card wrap">
 							<div class="card front">
 								<img class="img"	v-bind:src="card.image">
